@@ -26,6 +26,7 @@
 		427DEE02188A413800CAD1E1 /* AssetsLibrary.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 427DEE01188A413800CAD1E1 /* AssetsLibrary.framework */; };
 		4285252F15BF750000622EE8 /* haarcascade_frontalface_alt.xml in Resources */ = {isa = PBXBuildFile; fileRef = 4285252E15BF750000622EE8 /* haarcascade_frontalface_alt.xml */; };
 		429EECBF1CE7CA2300D2D924 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 429EECBE1CE7CA2300D2D924 /* Images.xcassets */; };
+		429EECC21CE7CEF800D2D924 /* CVFBabyMon.mm in Sources */ = {isa = PBXBuildFile; fileRef = 429EECC11CE7CEF800D2D924 /* CVFBabyMon.mm */; };
 		42AA08581508314600B379F4 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 42AA08571508314600B379F4 /* UIKit.framework */; };
 		42AA085A1508314600B379F4 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 42AA08591508314600B379F4 /* Foundation.framework */; };
 		42AA085C1508314600B379F4 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 42AA085B1508314600B379F4 /* CoreGraphics.framework */; };
@@ -80,6 +81,8 @@
 		4285252E15BF750000622EE8 /* haarcascade_frontalface_alt.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = haarcascade_frontalface_alt.xml; sourceTree = "<group>"; };
 		4291D69F1AA1D14200F93E54 /* HeatKey.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = HeatKey.entitlements; sourceTree = "<group>"; };
 		429EECBE1CE7CA2300D2D924 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = BabyMon/Images.xcassets; sourceTree = "<group>"; };
+		429EECC01CE7CEF800D2D924 /* CVFBabyMon.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CVFBabyMon.h; path = CVFunhouse/CVFBabyMon.h; sourceTree = "<group>"; };
+		429EECC11CE7CEF800D2D924 /* CVFBabyMon.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = CVFBabyMon.mm; path = CVFunhouse/CVFBabyMon.mm; sourceTree = "<group>"; };
 		42AA08531508314600B379F4 /* BabyMon.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BabyMon.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		42AA08571508314600B379F4 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		42AA08591508314600B379F4 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -150,6 +153,8 @@
 			children = (
 				420A3F8315BC6724004804EF /* CVFPassThru.h */,
 				420A3F8415BC6724004804EF /* CVFPassThru.mm */,
+				429EECC01CE7CEF800D2D924 /* CVFBabyMon.h */,
+				429EECC11CE7CEF800D2D924 /* CVFBabyMon.mm */,
 				42B497211A3DB1B00044B090 /* CVFHeatKey.h */,
 				42B497221A3DB1B00044B090 /* CVFHeatKey.mm */,
 			);
@@ -356,6 +361,7 @@
 				42AA08741508314600B379F4 /* CVFFlipsideViewController.m in Sources */,
 				42537094150839FF00BFE3C0 /* CVFImageProcessor.mm in Sources */,
 				42B497231A3DB1B00044B090 /* CVFHeatKey.mm in Sources */,
+				429EECC21CE7CEF800D2D924 /* CVFBabyMon.mm in Sources */,
 				420A3F8515BC6724004804EF /* CVFPassThru.mm in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

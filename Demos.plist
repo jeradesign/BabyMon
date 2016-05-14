@@ -3,6 +3,10 @@
 <plist version="1.0">
 <array>
 	<array>
+		<string>BabyMon</string>
+		<string>CVFBabyMon</string>
+	</array>
+	<array>
 		<string>Pass Thru</string>
 		<string>CVFPassThru</string>
 	</array>
