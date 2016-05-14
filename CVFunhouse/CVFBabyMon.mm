@@ -22,6 +22,10 @@ using namespace cv;
     Mat rgbMat;
     cvtColor(ycrcb, rgbMat, CV_YCrCb2RGB);
     
+    Mat planes[3];
+    split(rgbMat,planes);
+    cvtColor(planes[0], rgbMat, CV_GRAY2RGB);
+    
     [self matReady:rgbMat];
 }
 
