@@ -79,14 +79,14 @@
 		4285252515BF5A9300622EE8 /* TODO.rtf */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; path = TODO.rtf; sourceTree = "<group>"; };
 		4285252E15BF750000622EE8 /* haarcascade_frontalface_alt.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = haarcascade_frontalface_alt.xml; sourceTree = "<group>"; };
 		4291D69F1AA1D14200F93E54 /* HeatKey.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = HeatKey.entitlements; sourceTree = "<group>"; };
-		42AA08531508314600B379F4 /* HeatKey.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HeatKey.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		42AA08531508314600B379F4 /* BabyMon.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BabyMon.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		42AA08571508314600B379F4 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		42AA08591508314600B379F4 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		42AA085B1508314600B379F4 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
-		42AA085F1508314600B379F4 /* HeatKey-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "HeatKey-Info.plist"; sourceTree = "<group>"; };
+		42AA085F1508314600B379F4 /* BabyMon-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "BabyMon-Info.plist"; sourceTree = "<group>"; };
 		42AA08611508314600B379F4 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		42AA08631508314600B379F4 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		42AA08651508314600B379F4 /* HeatKey-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "HeatKey-Prefix.pch"; sourceTree = "<group>"; };
+		42AA08651508314600B379F4 /* BabyMon-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "BabyMon-Prefix.pch"; sourceTree = "<group>"; };
 		42AA08661508314600B379F4 /* CVFAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CVFAppDelegate.h; sourceTree = "<group>"; };
 		42AA08671508314600B379F4 /* CVFAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CVFAppDelegate.m; sourceTree = "<group>"; };
 		42AA086A1508314600B379F4 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard_iPhone.storyboard; sourceTree = "<group>"; };
@@ -196,7 +196,7 @@
 		42AA08541508314600B379F4 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				42AA08531508314600B379F4 /* HeatKey.app */,
+				42AA08531508314600B379F4 /* BabyMon.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -250,10 +250,10 @@
 		42AA085E1508314600B379F4 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				42AA085F1508314600B379F4 /* HeatKey-Info.plist */,
+				42AA085F1508314600B379F4 /* BabyMon-Info.plist */,
 				42AA08601508314600B379F4 /* InfoPlist.strings */,
 				42AA08631508314600B379F4 /* main.m */,
-				42AA08651508314600B379F4 /* HeatKey-Prefix.pch */,
+				42AA08651508314600B379F4 /* BabyMon-Prefix.pch */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -261,9 +261,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		42AA08521508314600B379F4 /* HeatKey */ = {
+		42AA08521508314600B379F4 /* BabyMon */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 42AA08771508314600B379F4 /* Build configuration list for PBXNativeTarget "HeatKey" */;
+			buildConfigurationList = 42AA08771508314600B379F4 /* Build configuration list for PBXNativeTarget "BabyMon" */;
 			buildPhases = (
 				42AA084F1508314600B379F4 /* Sources */,
 				42AA08501508314600B379F4 /* Frameworks */,
@@ -273,9 +273,9 @@
 			);
 			dependencies = (
 			);
-			name = HeatKey;
+			name = BabyMon;
 			productName = CVFunhouse;
-			productReference = 42AA08531508314600B379F4 /* HeatKey.app */;
+			productReference = 42AA08531508314600B379F4 /* BabyMon.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -285,7 +285,7 @@
 			isa = PBXProject;
 			attributes = {
 				CLASSPREFIX = CVF;
-				LastUpgradeCheck = 0610;
+				LastUpgradeCheck = 0730;
 				ORGANIZATIONNAME = "Jera Design LLC";
 				TargetAttributes = {
 					42AA08521508314600B379F4 = {
@@ -298,7 +298,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 42AA084D1508314500B379F4 /* Build configuration list for PBXProject "HeatKey" */;
+			buildConfigurationList = 42AA084D1508314500B379F4 /* Build configuration list for PBXProject "BabyMon" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -310,7 +310,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				42AA08521508314600B379F4 /* HeatKey */,
+				42AA08521508314600B379F4 /* BabyMon */,
 			);
 		};
 /* End PBXProject section */
@@ -407,8 +407,10 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
@@ -455,6 +457,7 @@
 				COPY_PHASE_STRIP = YES;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_TREAT_WARNINGS_AS_ERRORS = YES;
 				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
@@ -483,18 +486,20 @@
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(SRCROOT)",
 					"$(SRCROOT)/../FLIROneSDK/",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "CVFunhouse/HeatKey-Prefix.pch";
+				GCC_PREFIX_HEADER = "CVFunhouse/BabyMon-Prefix.pch";
 				HEADER_SEARCH_PATHS = "";
-				INFOPLIST_FILE = "CVFunhouse/HeatKey-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				INFOPLIST_FILE = "CVFunhouse/BabyMon-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
 				OTHER_LDFLAGS = "-ObjC";
-				PRODUCT_NAME = HeatKey;
+				PRODUCT_BUNDLE_IDENTIFIER = com.jera.BabyMon;
+				PRODUCT_NAME = BabyMon;
 				PROVISIONING_PROFILE = "";
 				TARGETED_DEVICE_FAMILY = 1;
 				WRAPPER_EXTENSION = app;
@@ -506,18 +511,20 @@
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(SRCROOT)",
 					"$(SRCROOT)/../FLIROneSDK/",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "CVFunhouse/HeatKey-Prefix.pch";
+				GCC_PREFIX_HEADER = "CVFunhouse/BabyMon-Prefix.pch";
 				HEADER_SEARCH_PATHS = "";
-				INFOPLIST_FILE = "CVFunhouse/HeatKey-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				INFOPLIST_FILE = "CVFunhouse/BabyMon-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
 				OTHER_LDFLAGS = "-ObjC";
-				PRODUCT_NAME = HeatKey;
+				PRODUCT_BUNDLE_IDENTIFIER = com.jera.BabyMon;
+				PRODUCT_NAME = BabyMon;
 				PROVISIONING_PROFILE = "";
 				TARGETED_DEVICE_FAMILY = 1;
 				WRAPPER_EXTENSION = app;
@@ -527,7 +534,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		42AA084D1508314500B379F4 /* Build configuration list for PBXProject "HeatKey" */ = {
+		42AA084D1508314500B379F4 /* Build configuration list for PBXProject "BabyMon" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				42AA08751508314600B379F4 /* Debug */,
@@ -536,7 +543,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		42AA08771508314600B379F4 /* Build configuration list for PBXNativeTarget "HeatKey" */ = {
+		42AA08771508314600B379F4 /* Build configuration list for PBXNativeTarget "BabyMon" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				42AA08781508314600B379F4 /* Debug */,
