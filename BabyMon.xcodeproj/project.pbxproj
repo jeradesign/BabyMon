@@ -25,6 +25,7 @@
 		427D67E015D9CB81008A25FA /* Settings.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 427D67DF15D9CB81008A25FA /* Settings.bundle */; };
 		427DEE02188A413800CAD1E1 /* AssetsLibrary.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 427DEE01188A413800CAD1E1 /* AssetsLibrary.framework */; };
 		4285252F15BF750000622EE8 /* haarcascade_frontalface_alt.xml in Resources */ = {isa = PBXBuildFile; fileRef = 4285252E15BF750000622EE8 /* haarcascade_frontalface_alt.xml */; };
+		429EECBF1CE7CA2300D2D924 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 429EECBE1CE7CA2300D2D924 /* Images.xcassets */; };
 		42AA08581508314600B379F4 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 42AA08571508314600B379F4 /* UIKit.framework */; };
 		42AA085A1508314600B379F4 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 42AA08591508314600B379F4 /* Foundation.framework */; };
 		42AA085C1508314600B379F4 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 42AA085B1508314600B379F4 /* CoreGraphics.framework */; };
@@ -35,7 +36,6 @@
 		42AA086E1508314600B379F4 /* MainStoryboard_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 42AA086C1508314600B379F4 /* MainStoryboard_iPad.storyboard */; };
 		42AA08711508314600B379F4 /* CVFMainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 42AA08701508314600B379F4 /* CVFMainViewController.m */; };
 		42AA08741508314600B379F4 /* CVFFlipsideViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 42AA08731508314600B379F4 /* CVFFlipsideViewController.m */; };
-		42ADE5611A68CD0E005874D7 /* HeatKey120.png in Resources */ = {isa = PBXBuildFile; fileRef = 42ADE5601A68CD0E005874D7 /* HeatKey120.png */; };
 		42B3376D15BA944400CBD888 /* CVFunhouse144.png in Resources */ = {isa = PBXBuildFile; fileRef = 42B3376C15BA944400CBD888 /* CVFunhouse144.png */; };
 		42B3377015BA945A00CBD888 /* CVFunhouse72.png in Resources */ = {isa = PBXBuildFile; fileRef = 42B3376F15BA945A00CBD888 /* CVFunhouse72.png */; };
 		42B3377615BA949400CBD888 /* CVFunhouse114.png in Resources */ = {isa = PBXBuildFile; fileRef = 42B3377515BA949400CBD888 /* CVFunhouse114.png */; };
@@ -79,6 +79,7 @@
 		4285252515BF5A9300622EE8 /* TODO.rtf */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; path = TODO.rtf; sourceTree = "<group>"; };
 		4285252E15BF750000622EE8 /* haarcascade_frontalface_alt.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = haarcascade_frontalface_alt.xml; sourceTree = "<group>"; };
 		4291D69F1AA1D14200F93E54 /* HeatKey.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = HeatKey.entitlements; sourceTree = "<group>"; };
+		429EECBE1CE7CA2300D2D924 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = BabyMon/Images.xcassets; sourceTree = "<group>"; };
 		42AA08531508314600B379F4 /* BabyMon.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BabyMon.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		42AA08571508314600B379F4 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		42AA08591508314600B379F4 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -95,7 +96,6 @@
 		42AA08701508314600B379F4 /* CVFMainViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CVFMainViewController.m; sourceTree = "<group>"; };
 		42AA08721508314600B379F4 /* CVFFlipsideViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CVFFlipsideViewController.h; sourceTree = "<group>"; };
 		42AA08731508314600B379F4 /* CVFFlipsideViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CVFFlipsideViewController.m; sourceTree = "<group>"; };
-		42ADE5601A68CD0E005874D7 /* HeatKey120.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = HeatKey120.png; sourceTree = "<group>"; };
 		42B3376C15BA944400CBD888 /* CVFunhouse144.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = CVFunhouse144.png; sourceTree = "<group>"; };
 		42B3376F15BA945A00CBD888 /* CVFunhouse72.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = CVFunhouse72.png; sourceTree = "<group>"; };
 		42B3377515BA949400CBD888 /* CVFunhouse114.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = CVFunhouse114.png; sourceTree = "<group>"; };
@@ -159,7 +159,7 @@
 		4285252915BF6CDF00622EE8 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				42ADE5601A68CD0E005874D7 /* HeatKey120.png */,
+				429EECBE1CE7CA2300D2D924 /* Images.xcassets */,
 				42B497241A3DCA710044B090 /* vikinglander1-1.jpg */,
 				42B957F41A3D2C7200BA11E0 /* FLIROneSDK.bundle */,
 				421897E516BC879900AC716C /* CloseButton.png */,
@@ -321,9 +321,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				42AA08621508314600B379F4 /* InfoPlist.strings in Resources */,
+				429EECBF1CE7CA2300D2D924 /* Images.xcassets in Resources */,
 				42AA086B1508314600B379F4 /* MainStoryboard_iPhone.storyboard in Resources */,
 				42AA086E1508314600B379F4 /* MainStoryboard_iPad.storyboard in Resources */,
-				42ADE5611A68CD0E005874D7 /* HeatKey120.png in Resources */,
 				42B3376D15BA944400CBD888 /* CVFunhouse144.png in Resources */,
 				42B3377015BA945A00CBD888 /* CVFunhouse72.png in Resources */,
 				42B3377615BA949400CBD888 /* CVFunhouse114.png in Resources */,
@@ -484,6 +484,8 @@
 		42AA08781508314600B379F4 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = "Brand Assets";
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				ENABLE_BITCODE = NO;
@@ -509,6 +511,8 @@
 		42AA08791508314600B379F4 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = "Brand Assets";
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				ENABLE_BITCODE = NO;
