@@ -12,25 +12,17 @@
 
 using namespace cv;
 
--(void)processMat1:(cv::Mat)mat1 mat2:(cv::Mat)mat2
+-(void)processMat1:(cv::Mat)mat1 mat2:(cv::Mat)ycbcr
 {
-#pragma unused(mat2)
-    cv::Mat equalized;
+#pragma unused(mat1)
+    Mat ycrcb(ycbcr.rows, ycbcr.cols, CV_8UC3);
     
-    double min, max;
+    int from_to[] = { 0,0, 1,2, 2,1 };
+    cv::mixChannels(&ycbcr, 1, &ycrcb, 1, from_to, 3);
+    Mat rgbMat;
+    cvtColor(ycrcb, rgbMat, CV_YCrCb2RGB);
     
-    MatIterator_<uint16_t> it, end;
-    for( it = mat1.begin<uint16_t>(), end = mat1.end<uint16_t>(); it != end; ++it) {
-        if (*it < 13500) {
-            *it = 13500;
-        }
-    }
-    
-    cv::minMaxLoc(mat1, &min, &max);
-    NSLog(@"min: %f max: %f", min, max);
-    normalize(mat1, equalized, 0, 16384, cv::NORM_MINMAX);
-    equalized.convertTo(equalized, CV_8UC1, 0.015625);
-    [self matReady:equalized];
+    [self matReady:rgbMat];
 }
 
 @end
