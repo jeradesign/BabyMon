@@ -334,7 +334,7 @@
     [[FLIROneSDKStreamManager sharedInstance] addDelegate:self];
 //    [[FLIROneSDKStreamManager sharedInstance] setImageOptions:FLIROneSDKImageOptionsBlendedMSXRGBA8888Image];
 //    [[FLIROneSDKStreamManager sharedInstance] setImageOptions:FLIROneSDKImageOptionsThermalRGBA8888Image];
-    [[FLIROneSDKStreamManager sharedInstance] setImageOptions:FLIROneSDKImageOptionsThermalLinearFlux14BitImage | FLIROneSDKImageOptionsVisualYCbCr888Image];
+    [[FLIROneSDKStreamManager sharedInstance] setImageOptions:FLIROneSDKImageOptionsThermalRadiometricKelvinImage | FLIROneSDKImageOptionsVisualYCbCr888Image];
 }
 
 - (void)turnCameraOn {
@@ -359,18 +359,19 @@
     [self.imageProcessor processFLIRData:thermalImage imageSize:size];
 }
 
-- (void)FLIROneSDKDelegateManager:(FLIROneSDKDelegateManager *)delegateManager didReceiveThermal14BitLinearFluxImage:(NSData *)linearFluxImage imageSize:(CGSize)size
+- (void)FLIROneSDKDelegateManager:(FLIROneSDKDelegateManager *)delegateManager
+        didReceiveRadiometricData:(NSData *)radiometricData
+                        imageSize:(CGSize)size
 {
 #pragma unused(delegateManager)
-#pragma unused(linearFluxImage)
 #pragma unused(size)
 //    NSLog(@"didReceiveThermalThermalLinearFlux14BitImage:");
     if (self.visData != nil) {
-        [self.imageProcessor process16BitFLIRData:linearFluxImage irImageSize:size visibleData:self.visData visibleImageSize:self.visSize];
+        [self.imageProcessor process16BitFLIRData:radiometricData irImageSize:size visibleData:self.visData visibleImageSize:self.visSize];
         self.visData = nil;
         self.irData = nil;
     } else {
-        self.irData = linearFluxImage;
+        self.irData = radiometricData;
         self.irSize = size;
     }
 }
