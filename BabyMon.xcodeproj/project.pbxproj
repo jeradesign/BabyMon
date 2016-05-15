@@ -27,6 +27,7 @@
 		4285252F15BF750000622EE8 /* haarcascade_frontalface_alt.xml in Resources */ = {isa = PBXBuildFile; fileRef = 4285252E15BF750000622EE8 /* haarcascade_frontalface_alt.xml */; };
 		429EECBF1CE7CA2300D2D924 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 429EECBE1CE7CA2300D2D924 /* Images.xcassets */; };
 		429EECC21CE7CEF800D2D924 /* CVFBabyMon.mm in Sources */ = {isa = PBXBuildFile; fileRef = 429EECC11CE7CEF800D2D924 /* CVFBabyMon.mm */; };
+		429EECC41CE7F4B600D2D924 /* sampleframes_hq.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 429EECC31CE7F4B600D2D924 /* sampleframes_hq.bundle */; };
 		42AA08581508314600B379F4 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 42AA08571508314600B379F4 /* UIKit.framework */; };
 		42AA085A1508314600B379F4 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 42AA08591508314600B379F4 /* Foundation.framework */; };
 		42AA085C1508314600B379F4 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 42AA085B1508314600B379F4 /* CoreGraphics.framework */; };
@@ -83,6 +84,7 @@
 		429EECBE1CE7CA2300D2D924 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = BabyMon/Images.xcassets; sourceTree = "<group>"; };
 		429EECC01CE7CEF800D2D924 /* CVFBabyMon.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CVFBabyMon.h; path = CVFunhouse/CVFBabyMon.h; sourceTree = "<group>"; };
 		429EECC11CE7CEF800D2D924 /* CVFBabyMon.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = CVFBabyMon.mm; path = CVFunhouse/CVFBabyMon.mm; sourceTree = "<group>"; };
+		429EECC31CE7F4B600D2D924 /* sampleframes_hq.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = sampleframes_hq.bundle; path = ../FLIROneSDK/sampleframes_hq.bundle; sourceTree = "<group>"; };
 		42AA08531508314600B379F4 /* BabyMon.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BabyMon.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		42AA08571508314600B379F4 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		42AA08591508314600B379F4 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -164,6 +166,7 @@
 		4285252915BF6CDF00622EE8 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				429EECC31CE7F4B600D2D924 /* sampleframes_hq.bundle */,
 				429EECBE1CE7CA2300D2D924 /* Images.xcassets */,
 				42B497241A3DCA710044B090 /* vikinglander1-1.jpg */,
 				42B957F41A3D2C7200BA11E0 /* FLIROneSDK.bundle */,
@@ -336,6 +339,7 @@
 				42B497251A3DCA710044B090 /* vikinglander1-1.jpg in Resources */,
 				4285252F15BF750000622EE8 /* haarcascade_frontalface_alt.xml in Resources */,
 				427D67E015D9CB81008A25FA /* Settings.bundle in Resources */,
+				429EECC41CE7F4B600D2D924 /* sampleframes_hq.bundle in Resources */,
 				423FA83715DB1AD3001D30AC /* SwitchCameraIcon44.png in Resources */,
 				423FA83815DB1AD3001D30AC /* SwitchCameraIcon44@2x.png in Resources */,
 				423FA83B15DB264B001D30AC /* iButton30.png in Resources */,

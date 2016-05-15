@@ -11,6 +11,7 @@
 #import "CVFFlipsideViewController.h"
 
 #import "CVFPassThru.h"
+#import <FLIROneSDK/FLIROneSDKSimulation.h>
 
 @interface CVFMainViewController()
 
@@ -331,6 +332,8 @@
 #pragma mark - FLIR One support
 
 - (void)setupCamera {
+    [[FLIROneSDKSimulation sharedInstance] connectWithFrameBundleName:@"sampleframes_hq"
+                                          withBatteryChargePercentage:@42];
     [[FLIROneSDKStreamManager sharedInstance] addDelegate:self];
 //    [[FLIROneSDKStreamManager sharedInstance] setImageOptions:FLIROneSDKImageOptionsBlendedMSXRGBA8888Image];
 //    [[FLIROneSDKStreamManager sharedInstance] setImageOptions:FLIROneSDKImageOptionsThermalRGBA8888Image];
