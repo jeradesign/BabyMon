@@ -6,12 +6,17 @@
 //  Copyright (c) 2012 Jera Design LLC. All rights reserved.
 //
 
+#import <AudioToolbox/AudioToolbox.h>
+
 #import "CVFMainViewController.h"
 #import <AssetsLibrary/AssetsLibrary.h>
 #import "CVFFlipsideViewController.h"
 
 #import "CVFPassThru.h"
 #import <FLIROneSDK/FLIROneSDKSimulation.h>
+#import "CVFTemperatureNotifications.h"
+
+static const float ALERT_INTERVAL = 1;
 
 @interface CVFMainViewController()
 
@@ -19,6 +24,9 @@
 @property (atomic, assign) CGSize irSize;
 @property (atomic, strong) NSData *visData;
 @property (atomic, assign) CGSize visSize;
+@property (atomic, assign) CFURLRef alertSoundURLRef;
+@property (atomic, assign) SystemSoundID alertSound;
+@property (atomic, strong) NSDate *lastAlertTime;
 
 @end
 
@@ -46,6 +54,15 @@
     
     NSString *demoListPath = [[NSBundle mainBundle] pathForResource:@"Demos" ofType:@"plist"];
     _demoList = [NSArray arrayWithContentsOfFile:demoListPath];
+    
+    self.lastAlertTime = [NSDate dateWithTimeIntervalSinceNow:-1];
+    
+    NSURL *alertSoundURL = [[NSBundle mainBundle] URLForResource: @"Waoo (Mary)"
+                                                withExtension: nil];
+    self.alertSoundURLRef = (CFURLRef)CFBridgingRetain(alertSoundURL);
+    SystemSoundID tempAlertSound;
+    AudioServicesCreateSystemSoundID(self.alertSoundURLRef, &tempAlertSound);
+    self.alertSound = tempAlertSound;
 
     [self showHideFPS];
     [self initializeDescription];
@@ -66,6 +83,17 @@
                                              selector:@selector(showHideDescription)
                                                  name:@"showDescription"
                                                object:nil];
+    
+    [[NSNotificationCenter defaultCenter] addObserver:self
+                                             selector:@selector(temperatureUpdate:)
+                                                 name:CVFTemperatureUpdateNotification
+                                               object:nil];
+    [[NSNotificationCenter defaultCenter] addObserver:self
+                                             selector:@selector(feverAlert)
+                                                 name:CVFFeverAlertNotification
+                                               object:nil];
+    
+    
     
     _library = [[ALAssetsLibrary alloc] init];
 }
@@ -309,6 +337,23 @@
     (void)contextInfo;
     NSLog(@"image:%@ didFinishSavingWithError:%@", image, error);
     _snapshotImage = nil;
+}
+
+#pragma mark - Temperature Notifications
+
+- (void)temperatureUpdate:(NSNotification*)newTemperatureNotification {
+    
+    NSNumber *tempAsNumber = (NSNumber*)newTemperatureNotification.object;
+    NSString *tempText = [NSString stringWithFormat:@"Temp: %5.1f°", [tempAsNumber floatValue]];
+    self.tempLabel.text = tempText;
+}
+
+- (void)feverAlert {
+    NSLog(@"%f", [self.lastAlertTime timeIntervalSinceNow]);
+    if ([self.lastAlertTime timeIntervalSinceNow] < -ALERT_INTERVAL) {
+        AudioServicesPlayAlertSound(self.alertSound);
+        self.lastAlertTime = [NSDate date];
+    }
 }
 
 #pragma mark - CVFImageProcessorDelegate

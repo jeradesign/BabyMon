@@ -30,6 +30,7 @@
 @property (weak, nonatomic) IBOutlet UIWebView *descriptionView;
 @property (weak, nonatomic) IBOutlet UIView *descriptionContainer;
 @property (weak, nonatomic) IBOutlet GLKView *arView;
+@property (weak, nonatomic) IBOutlet UILabel *tempLabel;
 
 @property (strong, nonatomic) UIPopoverController *flipsidePopoverController;
 @property (strong, atomic) CVFImageProcessor *imageProcessor;

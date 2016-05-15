@@ -15,6 +15,7 @@
 		423FA83815DB1AD3001D30AC /* SwitchCameraIcon44@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 423FA83615DB1AD3001D30AC /* SwitchCameraIcon44@2x.png */; };
 		423FA83B15DB264B001D30AC /* iButton30.png in Resources */ = {isa = PBXBuildFile; fileRef = 423FA83915DB264B001D30AC /* iButton30.png */; };
 		423FA83C15DB264B001D30AC /* iButton30@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 423FA83A15DB264B001D30AC /* iButton30@2x.png */; };
+		4242CDB81CE90106001F7CE0 /* Waoo (Mary) in Resources */ = {isa = PBXBuildFile; fileRef = 4242CDB71CE90106001F7CE0 /* Waoo (Mary) */; };
 		4250A8E91714C82200B880C3 /* GLKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4250A8E81714C82200B880C3 /* GLKit.framework */; };
 		4253708C1508383800BFE3C0 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4253708B1508383800BFE3C0 /* AVFoundation.framework */; };
 		425370901508384900BFE3C0 /* CoreMedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4253708E1508384900BFE3C0 /* CoreMedia.framework */; };
@@ -66,6 +67,8 @@
 		423FA83615DB1AD3001D30AC /* SwitchCameraIcon44@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "SwitchCameraIcon44@2x.png"; sourceTree = "<group>"; };
 		423FA83915DB264B001D30AC /* iButton30.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = iButton30.png; sourceTree = "<group>"; };
 		423FA83A15DB264B001D30AC /* iButton30@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "iButton30@2x.png"; sourceTree = "<group>"; };
+		4242CDB61CE8F926001F7CE0 /* CVFTemperatureNotifications.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CVFTemperatureNotifications.h; sourceTree = "<group>"; };
+		4242CDB71CE90106001F7CE0 /* Waoo (Mary) */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Waoo (Mary)"; sourceTree = "<group>"; };
 		4249F7AA16697A0900271FD5 /* libc++.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libc++.dylib"; path = "usr/lib/libc++.dylib"; sourceTree = SDKROOT; };
 		4250A8E81714C82200B880C3 /* GLKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GLKit.framework; path = System/Library/Frameworks/GLKit.framework; sourceTree = SDKROOT; };
 		4253708B1508383800BFE3C0 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
@@ -157,6 +160,7 @@
 				420A3F8415BC6724004804EF /* CVFPassThru.mm */,
 				429EECC01CE7CEF800D2D924 /* CVFBabyMon.h */,
 				429EECC11CE7CEF800D2D924 /* CVFBabyMon.mm */,
+				4242CDB61CE8F926001F7CE0 /* CVFTemperatureNotifications.h */,
 				42B497211A3DB1B00044B090 /* CVFHeatKey.h */,
 				42B497221A3DB1B00044B090 /* CVFHeatKey.mm */,
 			);
@@ -183,6 +187,7 @@
 				42B3376C15BA944400CBD888 /* CVFunhouse144.png */,
 				42E60DB316BB52E500F9712B /* Demos.plist */,
 				426B881316BC6BE30093D62F /* NoDescription.html */,
+				4242CDB71CE90106001F7CE0 /* Waoo (Mary) */,
 			);
 			name = Resources;
 			sourceTree = "<group>";
@@ -329,6 +334,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				42AA08621508314600B379F4 /* InfoPlist.strings in Resources */,
+				4242CDB81CE90106001F7CE0 /* Waoo (Mary) in Resources */,
 				429EECBF1CE7CA2300D2D924 /* Images.xcassets in Resources */,
 				42AA086B1508314600B379F4 /* MainStoryboard_iPhone.storyboard in Resources */,
 				42AA086E1508314600B379F4 /* MainStoryboard_iPad.storyboard in Resources */,

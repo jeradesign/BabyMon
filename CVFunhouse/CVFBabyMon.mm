@@ -7,8 +7,12 @@
 //
 
 #import "CVFBabyMon.h"
+#import "CVFTemperatureNotifications.h"
 
 @implementation CVFBabyMon
+
+NSString *const CVFTemperatureUpdateNotification = @"CVFTemperatureUpdateNotification";
+NSString *const CVFFeverAlertNotification = @"CVFFeverAlertNotification";
 
 //const int FEVER_THRESH = 31115; // 100.4 degrees F in 100ths of a Kelvin.
 //const int FEVER_THRESH = 31015; // 98.6 degrees F in 100ths of a Kelvin.
@@ -18,12 +22,18 @@ using namespace cv;
 
 -(void)processMat1:(cv::Mat)thermal mat2:(cv::Mat)ycbcr
 {
-//    double min, max;
-//    cv::minMaxLoc(thermal, &min, &max);
-//    
-//    if (max > FEVER_THRESH) {
-//        
-//    }
+    double min, max;
+    cv::minMaxLoc(thermal, &min, &max);
+    
+    double maxKelvin = max / 100;
+    double maxFahr = maxKelvin * 9.0 / 5.0 - 459.67;
+    [[NSNotificationCenter defaultCenter] postNotificationName:CVFTemperatureUpdateNotification
+                                                        object:[NSNumber numberWithFloat:maxFahr]];
+    
+    if (max > FEVER_THRESH) {
+        [[NSNotificationCenter defaultCenter] postNotificationName:CVFFeverAlertNotification
+                                                            object:nil];
+    }
 
     MatIterator_<uint16_t> it, end;
     for( it = thermal.begin<uint16_t>(), end = thermal.end<uint16_t>(); it != end; ++it) {
