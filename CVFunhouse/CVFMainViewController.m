@@ -345,7 +345,9 @@ static const float ALERT_INTERVAL = 1;
     
     NSNumber *tempAsNumber = (NSNumber*)newTemperatureNotification.object;
     NSString *tempText = [NSString stringWithFormat:@"Temp: %5.1f°", [tempAsNumber floatValue]];
-    self.tempLabel.text = tempText;
+    dispatch_async(dispatch_get_main_queue(), ^{
+        self.tempLabel.text = tempText;
+    });
 }
 
 - (void)feverAlert {
